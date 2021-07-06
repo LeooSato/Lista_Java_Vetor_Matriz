@@ -9,6 +9,9 @@ public class Exercicio2 {
 		int contador = 0;
 		int[] Dados = new int[5];
 		int maiorDado = 0;
+		double media=0;
+		int soma =0;
+		
 		
 		//Inscreve os dados no vetor e Valida!
 		
@@ -32,6 +35,11 @@ public class Exercicio2 {
 		for(int l=0; l<Dados.length;l++) {
 			System.out.println("os dados inseridos são:"+ Dados[l]+"\t" );
 			
+			soma = soma + Dados[l];
+			media = soma / Dados.length;
+			
+			
+			
 			if(Dados[l] > maiorDado) {
 				maiorDado = Dados[l];
 			}}
@@ -40,8 +48,10 @@ public class Exercicio2 {
 			if(Dados[l] == maiorDado) {
 				contador = contador+1;
 				}}
-			
-			System.out.println("O valor "+maiorDado+" Repetiu-se "+contador+" Vezes");
+		
+		
+			System.out.println("O Maior valor "+maiorDado+" Repetiu-se "+contador+" Vezes");
+			System.out.println("A media dos Valores: "+media);
 		
 	}
 
