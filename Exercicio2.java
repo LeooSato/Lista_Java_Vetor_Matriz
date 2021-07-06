@@ -7,7 +7,7 @@ public class Exercicio2 {
 		@SuppressWarnings("resource")
 		Scanner ler = new Scanner(System.in);
 		int contador = 0;
-		int[] Dados = new int[5];
+		int[] Dados = new int[10];
 		int maiorDado = 0;
 		double media=0;
 		int soma =0;
